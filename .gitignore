@@ -1,0 +1,31 @@
+# Environments
+.venv/
+venv/
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Data and models are not stored in Git (we'll use DVC later)
+data/raw/*
+data/interim/*
+data/processed/*
+models/*
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+!models/.gitkeep
+
+# Experiment tracking
+mlruns/
+mlflow.db
+
+# Editors and OS
+.vscode/
+.DS_Store
+Thumbs.db
